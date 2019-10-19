@@ -12,7 +12,7 @@ time ./v -o ./v2 v.v
 
 My desktop is pretty fast, let's try a slower machine. On a 5 year old laptop with a mobile CPU I'm getting 0.31 seconds, which is still very fast.
 
-This was achieved by several optimizations, like caching the modules and direct machine code generation via tcc. 
+This was achieved by several optimizations, like caching the `builtin` module and direct machine code generation via tcc. 
 
 
 There are still a couple of things to optimize. By January 2020 it should drop to 0.06 seconds.

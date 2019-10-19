@@ -4,6 +4,7 @@ V now compiles itself in a stunning 0.09 seconds:
 ```bash
 wget https://github.com/vlang/v/releases/download/0.1.21/v_linux.zip
 unzip v_linux.zip && cd v
+./v -o ./v2 v.v # warm up
 time ./v -o ./v2 v.v
 0.06s user 0.03s system 97% cpu 0.094 total
 ./v2 -o v3 v.v # make sure that V can still build itself

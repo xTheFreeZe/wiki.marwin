@@ -17,8 +17,9 @@ This was achieved by several optimizations, like caching the `builtin` module an
 
 There are still a couple of things to optimize. By January 2020 it should drop to 0.06 seconds.
 
-Everything has a price though: this is only for unoptimized builds, ~2 times slower than production builds. Running `v -prod` to make a production build is going to be several orders of magnitude slower.
+Everything has a price though: this is only for unoptimized builds, which are ~2 times slower than production builds (this is still fast enough for a vast majority of users during the development cycle). Running `v -prod` to make a production build is going to be significantly slower.
 
+### Easier bootstrapping without dependencies
 
 Another cool change is an even simpler bootstrapping process. Bootstrapping V has always been simple from the start:
 

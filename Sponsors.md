@@ -13,10 +13,8 @@
 <tr><td>Bart Pype <td>$150
 <tr><td>Takafumi Imai <td>$150
 <tr><td>George <td>$150
-
 <tr><td> Sven Taute<td>$120
 <tr><td>tama <td>$120
-
 <tr><td>Ivo <td>$120
 <tr><td> Le Bach<td>$120
 <tr><td> José Luis Cuesta Landoni<td>$120
@@ -48,22 +46,36 @@
 <tr><td> Charles Coope<td>$25
 <tr><td>William Cleveland<td>$25
 <tr><td>Tyler Kropp <td>$25
+
+<tr><td>James Richards  <td>$25
 <tr><td>Wataru Matsui<td>$20
 <tr><td> Seán C McCord<td>$20
-<tr><td> R.Jeromans & R.Jeromans<td>$20
+<tr><td> R.Jeromans<td>$20
 <tr><td> 白帽子<td>$20
 <tr><td> Jay Williams<td>$20
-<tr><td> <td>
-<tr><td> <td>
-<tr><td> <td>
-<tr><td> <td>
-<tr><td> <td>
-<tr><td> <td>
-<tr><td>James Richards  <td>$25
+<tr><td> Sam Raker<td>$20
+<tr><td> Andreas Schneider<td>$20
+<tr><td> Abhay<td>$20
+<tr><td>Grigory Petrov <td>$20
+<tr><td> Kindy Lin<td>$20
+<tr><td> Werner Stein<td>$20
+<tr><td>neguse<td>$20
+<tr><td>Oliver Kelton<td>$20
 <tr><td>Sean Jensen-Grey  <td>$17
+<tr><td>Peter Ronnquist<td>$15
+<tr><td>Boris Resnick<td>$15
+<tr><td>Matt Braun<td>$15
+<tr><td>Alexander Karelas<td>$15
+<tr><td>Nate<td>$15
+<tr><td>Joseph Catrambone<td>$14
+<tr><td>Denis Andrejew<td>$13
+<tr><td>esquerbatua<td>$10
+<tr><td>Sandro Manke<td>$12
+<tr><td>Baiju Muthukadan<td>$10
+<tr><td>Chris Hallberg<td>$10
+<tr><td>JIH-CHI LEE<td>$10
 <tr><td>Oleg Tsyba  <td>$10
 <tr><td> Michael Sydenham<td> $10
-
 <tr><td>David Ellis  <td>$10
 
 </table>

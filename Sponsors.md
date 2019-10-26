@@ -1,3 +1,7 @@
+Thank you very much for your support.
+
+This list is updated once per month.
+
 <table>
 <tr><td width=200>Florin Gheorghies<td>$725
 <tr><td>Samuel Marks<td>$400

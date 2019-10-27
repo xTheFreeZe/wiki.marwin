@@ -47,7 +47,7 @@ This list is updated once per month.
 <tr><td> Hasen Judy<td>$30
 <tr><td>Ryan LIu <td>$30
 <tr><td> Mario Gutierrez<td>$30
-<tr><td> Charles Coope<td>$25
+<tr><td>Anonymous<td>$25
 <tr><td>William Cleveland<td>$25
 <tr><td>Tyler Kropp <td>$25
 

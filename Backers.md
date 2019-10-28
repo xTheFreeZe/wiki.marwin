@@ -15,7 +15,7 @@ This list is updated once per month.
 <tr><td>G S <td>$180
 <tr><td>Felix Green <td>$160
 <tr><td>Bart Pype <td>$150
-<tr><td>Takafumi Imai <td>$150
+<tr><td>takimai<td>$150
 <tr><td>Orbital Impact <td>$150
 <tr><td> Sven Taute<td>$120
 <tr><td>tama <td>$120

@@ -23,3 +23,6 @@ cd v
 make
 ```
 
+NB: on windows, the make.bat file first tries to locate gcc from MinGW-w64, and will use it, if it finds it. If not, it will try MSVC. If you want use MSVC, when you have both MinGW-w64 AND MSVC, you can pass:
+`make -msvc` 
+

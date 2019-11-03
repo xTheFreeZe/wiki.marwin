@@ -24,7 +24,7 @@ fn main() {
 <tr>
 <td>
 <pre>
-numbers := []int{1, 2, 3, 4};
+numbers := []int{1, 2, 3, 4}
 </pre>
 </td>
 <td valign="top">

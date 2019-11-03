@@ -4,9 +4,7 @@
 <td>
 <pre class="highlight highlight-source-v">
 package main
-
 import "fmt"
-
 func main() {
   fmt.Println("Hello World!")
 }

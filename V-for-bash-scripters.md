@@ -1,1 +1,0 @@
-V can be used as a platform independent script like language too.

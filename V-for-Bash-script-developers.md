@@ -33,9 +33,12 @@ ls
 </td>
 <td valign="top">
 <pre>
-files := ls('.') or { panic(err) }
-println( files)
+fn main(){
+  files := ls('.') or { panic(err) }
+  println( files)
+}
 </pre>
+_NB: fn main(){...} is needed only temporarily._
 </td>
 </tr>
 

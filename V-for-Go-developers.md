@@ -111,6 +111,30 @@ text := os.read_file(path)or{
 </tr>
 
 
+<tr><td colspan="2" align="center">Testing a function</td></tr>
+<tr>
+<td>
+<pre>
+package greeter_test
+import (
+    "testing"
+)
+func TestHello(t *testing.T) {
+    if Hello() != "Hello" {
+        t.Fatalf("Hello() failed")
+    }
+}
+</pre>
+</td>
+<td valign="top">
+<pre>
+fn test_hello() {
+    assert hello() == 'hello'
+}
+</pre>
+</td>
+</tr>
+
 
 
 </table>

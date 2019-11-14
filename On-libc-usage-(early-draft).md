@@ -1,6 +1,6 @@
 On all systems except Linux libc is the only official system API. (WinAPI in case of Windows.)
 
-The syscall API is unstable.
+The syscall API is private or unstable.
 
 The Go team used to use syscalls instead of libc on non-Linux systems, but they moved to libc instead:
 

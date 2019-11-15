@@ -9,3 +9,6 @@ https://github.com/golang/go/issues/16272
 https://github.com/golang/go/issues/30401
 
 V will support libc free builds on Linux soon.
+
+libc/syscalls discussion:
+https://news.ycombinator.com/item?id=18439100

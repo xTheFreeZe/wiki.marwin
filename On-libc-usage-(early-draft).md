@@ -4,6 +4,7 @@ The syscall API is private or unstable.
 
 The Go team used to use syscalls instead of libc on non-Linux systems, but they moved to libc instead:
 
+https://github.com/golang/go/issues/16272
 https://github.com/golang/go/issues/30401
 
 V will support libc free builds on Linux soon.

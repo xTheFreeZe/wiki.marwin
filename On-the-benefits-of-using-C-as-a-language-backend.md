@@ -24,3 +24,5 @@ V has been 100% written in V since the release:
 There is one clear drawback: you are limited by the capabilities of C. So far I've only faced some minor annoyances that could be easily overcome. Luckily V is a very small and simple language close to C.
 
 By the time of the 1.0 release, V will also have direct x64 machine code generation (similar to TCC), but the C backend will always be available, for production builds and for all supported platforms.
+
+With all that said, I'm open to an alternative LLVM backend. It's good to have multiple implementations.

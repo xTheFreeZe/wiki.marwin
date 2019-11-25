@@ -96,6 +96,7 @@ import (
 b, err := ioutil.ReadFile(path)
 if err != nil {
         log.Println(err)
+        return
 }
 text := string(b)
 </pre>
@@ -105,6 +106,7 @@ text := string(b)
 import os
 text := os.read_file(path)or{
   eprintln(err)
+  return
 }
 </pre>
 </td>

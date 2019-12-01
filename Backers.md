@@ -1,6 +1,6 @@
 Thank you very much for your support.
 
-This list is updated once per month.
+This list is updated once per month on every 5th day of the month.
 
 <table>
 <tr><td width=200>Florin Gheorghies<td>$725

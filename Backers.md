@@ -4,8 +4,9 @@ This list is updated once per month on every 5th day of the month.
 
 <table>
 <tr><td width=200>Florin Gheorghies<td>$725
+<tr><td>MX.com<td>$500
 <tr><td>Samuel Marks<td>$400
-<tr><td>Ivo Balbaert <td>$220
+<tr><td>Ivo Balbaert <td>$250
 <tr><td> James Thompson<td>$210
 <tr><td>Chris Lee <td>$210
 <tr><td>Ólafur Arason <td>$180

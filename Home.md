@@ -1,6 +1,10 @@
 ## V Blog
 I'll be using the GitHub Wiki as a blog for now, until Vorum matures.
 
+
+*14 Dec 2019*
+[Building a 150 KB web blog in V with 0 dependencies](https://github.com/vlang/v/blob/master/tutorials/building-a-simple-web-blog-with-vweb.md)
+
 *20 Nov 2019*
 [On the benefits of using C as a language backend](https://github.com/vlang/v/wiki/On-the-benefits-of-using-C-as-a-language-backend)
 

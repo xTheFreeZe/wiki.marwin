@@ -10,7 +10,7 @@ time ./v -fast -o ./v2 v.v
 ./v2 -o v3 v.v # make sure that V can still build itself
 ```
 
-My desktop is pretty fast, let's try a slower machine. On a 5 year old laptop with a mobile CPU I'm getting 0.31 seconds, which is still very fast.
+My desktop is pretty fast, let's try a slower machine. On a 5 year old laptop with a mobile CPU, I'm getting 0.31 seconds, which is still very fast.
 
 This was achieved by several optimizations, like caching the `builtin` module and direct machine code generation via tcc. 
 
@@ -29,7 +29,7 @@ cc -o v v.c
 
 No need to install any dependencies, libraries, etc. Just building a single C file with a C compiler (by the way, soon it won't even have any includes for better portability).
 
-However, a C compiler was still needed. It's a small and easy to install dependency that's very likely to already be installed on your machine, but it's still a dependency.
+However, a C compiler was still needed. It's small and easy to install dependency that's very likely to already be installed on your machine, but it's still a dependency.
 
 From now on the 2.6 MB zip archive contains everything you need to build V:
 

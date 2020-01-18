@@ -3,7 +3,7 @@ V uses C as the primary backend.
 Many people find this choice strange, and one of the most common comments/suggestions is "Why not use LLVM?"
 
 1. Using a C backend is a completely valid strategy (for example, the first C++ compiler Cfront did exactly this). C can be viewed as a modern cross-platform assembly language.
-To the end user it doesn't really matter what intermediate step is used to generate their binary, as long as it works, and the performance is good. 
+To the end-user, it doesn't really matter what intermediate step is used to generate their binary, as long as it works, and the performance is good. 
 
 2. Easy bootstrapping and development. To bootstrap V, you need to download `v.c` and run `cc v.c`. That's it. No dependencies, no bootstrapping chains, nothing. The developers of the language don't need to work on two parallel implementations, new features can be introduced and used in the language right away.
 

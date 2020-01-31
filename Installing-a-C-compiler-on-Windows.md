@@ -32,7 +32,7 @@ NB: on windows, the make.bat file first tries to locate gcc from MinGW-w64, and 
 #### llvm-mingw
 You can get a recent build of llvm-mingw from https://github.com/mstorsjo/llvm-mingw/releases .
 
-The main benefit with this compiler toolchain, is that the released archives are self contained - there is NO installation necessary. Just ~516MB of disk space.
+The main benefit with this compiler toolchain is that the released archives are self contained. There is NO installation necessary. Just ~516MB of disk space.
 
 1) download a .zip file from the link above.
 

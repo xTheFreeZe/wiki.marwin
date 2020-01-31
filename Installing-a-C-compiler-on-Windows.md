@@ -43,4 +43,4 @@ The main benefit with this compiler toolchain, is that the released archives are
 3) use `v -cc c:\llvm\bin\gcc.exe` when compiling your v source.
 
 
-If you do not want to use this C compiler toolchain anymore, you simply delete the folder c:\llvm , where you unpacked the llvm-mingw compiler.
+If you do not want to use this compiler toolchain anymore, you can simply delete the folder where you unpacked the zip (eg. C:\llvm).

@@ -63,7 +63,7 @@ println(numbers)
 </tr>
 
 
-<tr><td colspan="2" align="center">Filtering a vector</td></tr>
+<tr><td colspan="2" align="center">Filtering a slice</td></tr>
 <tr>
 <td>
 <pre>
@@ -82,6 +82,28 @@ even := numbers.filter(it % 2 == 0)
 </pre>
 </td>
 </tr>
+
+<tr><td colspan="2" align="center">Checking if a slice contains an element</td></tr>
+<tr>
+<td>
+<pre>
+contains := false
+for _, num := range numbers {
+        if num == x {
+            contains = true
+            break
+        }
+    }
+
+</pre>
+</td>
+<td valign="top">
+<pre>
+contains := x in numbers
+</pre>
+</td>
+</tr>
+
 
 
 

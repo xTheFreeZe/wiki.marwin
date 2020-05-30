@@ -50,7 +50,7 @@ A stable 0.2 version will be released in early June 2019.
 
 1.0 is going to have forward compatibility, meaning that V 1.0 programs will continue to compile and run without change.
 
-It's very important to give developers certainty and stability, and not to be in beta for years. This means that we need to be careful with the 1.0 release. It's going to happen in early 2020.
+It's very important to give developers certainty and stability, and not to be in beta for years. This means that we need to be careful with the 1.0 release. It's going to happen in 2020.
 
 **What operating systems are supported?**
 Windows, macOS, Linux, FreeBSD, OpenBSD, NetBSD, DragonflyBSD, Solaris, Android (Termux).

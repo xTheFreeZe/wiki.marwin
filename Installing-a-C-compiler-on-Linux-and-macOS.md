@@ -16,4 +16,4 @@ You can either install XCode from the App Store or run `xcode-select --install` 
 
 ### Arch Linux
 
-`V` can be found in the AUR as [`vlang`](https://aur.archlinux.org/packages/vlang/) or [`vlang-git`](https://aur.archlinux.org/packages/vlang-git/)
+GCC should be preinstalled

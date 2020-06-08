@@ -28,4 +28,4 @@ By the time of the 1.0 release, V will also have direct x64 machine code generat
 With all that said, I'm open to an alternative LLVM backend. It's good to have multiple implementations.
 
 Update:
-An LLVM backend is now developed by the community: https://github.com/vlang/v-llvm
+An alternative LLVM backend is now developed by the community: https://github.com/vlang/v-llvm

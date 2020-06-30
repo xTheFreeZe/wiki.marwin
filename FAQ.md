@@ -49,21 +49,20 @@ Yes! Simply run with -freestanding to exclude libc and vlib. See an example here
 **Will I be able to use a custom allocator?**
 Yes. This hasn't been implemented yet.
 
-**Is V going to change a lot? When is v1.0 happening?**
-Right now V is under heavy development, lots of things change.
+**Is V going to change a lot?**
 
-A stable 0.2 version will be released in early June 2019.
+No, V will always stay a small and simple language.
 
-1.0 is going to have forward compatibility, meaning that V 1.0 programs will continue to compile and run without change.
-
-It's very important to give developers certainty and stability, and not to be in beta for years. This means that we need to be careful with the 1.0 release. It's going to happen in 2020.
+https://github.com/vlang/v/blob/master/README.md#stability-guarantee-and-future-changes
 
 **What operating systems are supported?**
+
 Windows, macOS, Linux, FreeBSD, OpenBSD, NetBSD, DragonflyBSD, Solaris, Android (Termux).
 
 Android and iOS later this year.
 
 **Who's behind V?**
+
 Me and 250+ open source contributors.
 
 How can it translate C++? It's impossible for one person to write a C++ parser.

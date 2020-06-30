@@ -1,17 +1,21 @@
 **Why create V when there are already so many languages? Why not use Go, Rust, C++, Python etc?**
-Detailed comparison of V and other languages.
+
+<a href="https://vlang.io/compare" target="_blank">Detailed comparison of V and other languages.</a>
 
 **What language is V written in?**
+
 V. The compiler can compile itself. The original version was written in Go.
 
 **Does V use LLVM?**
+
 No. V uses C as its backend and will compile directly to machine code by the time of the 1.0 release.
 
-On the benefits of using C as a language backend.
+<a href="https://github.com/vlang/v/wiki/On-the-benefits-of-using-C-as-a-language-backend">On the benefits of using C as a language backend.</a>
 
 A separate LLVM backend is developed by the community.
 
 **What about optimization?**
+
 For now V emits C and uses GCC/Clang for optimized production builds. This way you get access to sophisticated optimization.
 
 Such builds are compiled ≈150 times slower than V development builds (but are still an order of magnitude faster than C++ production builds).
@@ -21,9 +25,11 @@ This can be a problem for industries where optimization is required during devel
 In the future V will have its own optimizer.
 
 **Is there garbage collection?**
-No. V manages memory at compilation, like Rust: vlang.io/docs#memory-management
+
+No. V uses memory management techniques from Rust, Swift, and implements its own: vlang.io/docs#memory-management
 
 **Is there a package manager?**
+
 Yes! V is a very modular language and encourages creation of modules that are easy to reuse.
 
 vpm.vlang.io.

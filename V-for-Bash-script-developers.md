@@ -40,7 +40,7 @@ ls
 <pre>
 #!/usr/local/bin/v
 files := ls('.')?
-println( files)
+println(files)
 </pre>
 
 </td>

@@ -39,12 +39,10 @@ ls
 <td valign="top">
 <pre>
 #!/usr/local/bin/v
-fn main(){
-  files := ls('.') or { panic(err) }
-  println( files)
-}
+files := ls('.')?
+println( files)
 </pre>
-_NB: fn main(){...} is needed only temporarily._
+
 </td>
 </tr>
 

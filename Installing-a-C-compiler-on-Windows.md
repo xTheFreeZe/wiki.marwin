@@ -1,4 +1,4 @@
-You can use MinGW-w64, Visual Studio, or llvm-mingw. Visual Studio takes a lot more space, but its header files are more up-to-date, so Visual Studio is preferred if you plan to use the UI library.
+You can use MinGW-w64, Visual Studio, llvm-mingw, or tcc. Visual Studio takes a lot more space, but its header files are more up-to-date, so Visual Studio is preferred if you plan to use the UI library.
 
 V uses recent Windows features like UTF-8 and color output support in console, IPv6 and native TLS support on sockets, etc. Windows 10 Fall Creators Update (**1709**) or later is the recommended Windows version for most complete compatibility. Windows 7, Windows 8(.1), and Windows 10 before Fall Creators Update are supported too but programs may lack some features and/or it may be hard to correctly link/redistribute recent C runtime library especially when using GNU C compiler.
 
@@ -44,3 +44,14 @@ The main benefit with this compiler toolchain is that the released archives are 
 
 
 If you do not want to use this compiler toolchain anymore, you can simply delete the folder where you unpacked the zip (eg. C:\llvm).
+
+
+
+#### tcc
+tcc is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (less than 10MB), and compiles C much faster than the other compilers listed here. However, it has several limitations:
+ - It does not optimize the resulting binaries at all. That's why it compiles faster, but the resulting binaries are slower at runtime.
+ - It is not as stable as GCC or Visual Studio. It can compile V and its standard library fine, but you may encounter issues if working with C interop.
+
+For these reasons, a different and more advanced compiler is recommended.
+
+Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually bu using `.\make.bat -tcc` or `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.

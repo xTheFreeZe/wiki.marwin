@@ -54,4 +54,4 @@ tcc is a very lightweight C compiler. Its main advantages are that it takes up v
 
 For these reasons, a different and more advanced compiler is recommended.
 
-Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually bu using `.\make.bat -tcc` or `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.
+Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually by using `./make.bat -tcc` or `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.

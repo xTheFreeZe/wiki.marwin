@@ -48,10 +48,10 @@ If you do not want to use this compiler toolchain anymore, you can simply delete
 
 
 #### tcc
-tcc is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (less than 10MB), and compiles C much faster than the other compilers listed here. However, it has several limitations:
- - It does not optimize the resulting binaries at all. That's why it compiles faster, but the resulting binaries are slower at runtime.
- - It is not as stable as GCC or Visual Studio. It can compile V and its standard library fine, but you may encounter issues if working with C interop.
+tcc is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (less than 10MB), and compiles much more quickly than the other compilers listed here. However, it has several limitations:
+ - It barely optimizes the resulting binaries, so resulting executables will be slower. That's partly why it compiles faster.
+ - It is not as stable as GCC or Visual Studio. While it compiles V and its standard library perfectly, you may encounter issues if working with C interop, or with external modules that depend on C libraries.
 
 For these reasons, a different and more advanced compiler is recommended.
 
-Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually by using `.\make.bat -tcc` or `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.
+Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually by using `.\make.bat -tcc` or by running `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.

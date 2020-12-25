@@ -7,11 +7,13 @@ To the end-user, it doesn't really matter what intermediate step is used to gene
 
 2. Easy bootstrapping and development. To bootstrap V, you need to download `v.c` and run `cc v.c`. That's it. No dependencies, no bootstrapping chains, nothing. The developers of the language don't need to work on two parallel implementations, new features can be introduced and used in the language right away.
 
-V has been 100% written in V since the release:
+V has been 100% written in V since the release.
+
+<!--
 
 <img width="1004" src="https://user-images.githubusercontent.com/687996/69198808-15876600-0b47-11ea-96f9-1bab32b8415f.png">
 
-
+-->
 
 3. C gives us amazing platform support. C runs on everything, literally everything. LLVM supports lots of platforms and architectures, but it will never beat C. Being able to run V software on everything that C supports is huge.
 

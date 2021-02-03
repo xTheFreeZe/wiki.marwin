@@ -5,8 +5,7 @@
 <pre class="highlight highlight-source-v">
 #include &lt;iostream>
 int main() {
-  std::cout << "Hello World!" << std::endl;
-  return 0;
+  std::cout << "Hello World!" << "\n";
 }
 </pre>
 </td>
@@ -52,9 +51,8 @@ numbers << 5
 <tr>
 <td>
 <pre>
-std::copy(numbers.begin(),
-  numbers.end(), std::ostream_iterator&lt;char>(
-    std::cout, " "));
+std::copy(numbers.begin(), numbers.end(), std::ostream_iterator<int>(std::cout, " "));
+std::cout << '\n';
 </pre>
 </td>
 <td valign="top">
@@ -71,7 +69,7 @@ println(numbers)
 <pre>
 std::copy_if(numbers.begin(), numbers.end(),
   std::back_inserter(bar), 
-  [](int i){return i % 2 == 0;});
+  [](int i){ return i % 2 == 0; });
 
 </pre>
 </td>
@@ -89,25 +87,18 @@ numbers.filter(it % 2 == 0)
 <td>
 <pre>
 #include &lt;iostream>
-#include &lt;fstream> 
-std::ifstream f;
+#include &lt;fstream>
+std::ifstream f("path");
 std::string text;
-f.exceptions(std::ifstream::failbit |
-  std::ifstream::badbit);
-try {
-  f.open(path);
-  text.assign(std::istreambuf_iterator<char>(f),
-    std::istreambuf_iterator<char>());
-} catch (std::system_error& e) {
-  std::cerr &lt;&lt; e.code().message() &lt;&lt;
-    std::endl;
-}
+  text.assign(std::istreambuf_iterator<char>(f), {});
+  if (!f)
+    std::cerr << "error reading from file\n";
 </pre>
 </td>
 <td valign="top">
 <pre>
 import os
-text := os.read_file(path)or{
+text := os.read_file(path) or {
   eprintln(err)
 }
 </pre>

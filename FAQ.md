@@ -44,7 +44,7 @@ v install sqlite
 It's going to be the same as in Go. To run foo() concurrently, just call it with go foo(). Right now it launches the function in a new system thread. Soon coroutines and the scheduler will be implemented.
 
 **Does V run on bare metal?**
-Yes! Simply run with -freestanding to exclude libc and vlib. See an example here.
+There is a -freestanding option that excludes libc and vlib, but it is a work in progress, and is not the focus of development right now.
 
 **Will I be able to use a custom allocator?**
 Yes. This hasn't been implemented yet.

@@ -77,6 +77,8 @@ V is a small and simple language, it doesn't need a powerful IDE.
 
 **Why "V"?**
 Initially the language had the same name as the product it was created for: Volt. The extension was ".v", I didn't want to mess up git history, so I decided to name it V :)
+Note : the ".v" extension clashes with (at least) two other known file formats : "Verilog" and "Coq" languages.
+This is actually unfortunate, but so is life sometimes.. V language will not change its extension.
 
 It's a simple name that reflects the simplicity of the language, and it's easy to pronounce for everyone in the world.
 

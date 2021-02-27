@@ -1,22 +1,20 @@
 ***
 
-**What Windows Versions Are Supported?**
+**Q: What Windows versions are supported?**
 
 V uses recent Windows features like UTF-8 and color output support in console, IPv6 and native TLS support on sockets, etc. Windows 10 Fall Creators Update (**1709**) or later is the recommended Windows version for most complete compatibility. Windows 7, Windows 8(.1), and Windows 10 before Fall Creators Update are supported too but programs may lack some features and/or it may be hard to correctly link/redistribute recent C runtime library especially when using GNU C compiler.
 
 ***
 
-**What C Compilers Are Supported?**
+**Q: How can I build V?**
+
+First you need to install a supported C compiler.
 
 **_64-bit_** Windows users can use **_MinGW-w64_**, **_Visual Studio_**, **_LLVM-MinGW_**, or **_TCC_** (both TCC64 and TCC32). 
 
 **_32-bit_** Windows users can use **_TCC32_**. Other C compilers might also work to some extent but they're not officially supported yet.
 
-***
-
-**How Can I build V?**
-
-After installation of a C compiler you can build V by launching cmd.exe and running below.
+Then you can build V by launching `cmd.exe` and running below.
 
 ```
 cd v
@@ -34,7 +32,7 @@ If all attempts fail, it will download TCC to `thirdparty/tcc` folder and use it
 
 ***
 
-**Can you give brief instructions on choosing and installing C compilers?**
+**Q: Can you give instructions on choosing and installing C compilers?**
 
 In short, there's no panacea. Please choose the most suitable one depending on your needs. 
 

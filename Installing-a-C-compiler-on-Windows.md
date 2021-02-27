@@ -1,4 +1,6 @@
-You can use MinGW-w64, Visual Studio, llvm-mingw, or tcc. Visual Studio takes a lot more space, but its header files are more up-to-date, so Visual Studio is preferred if you plan to use the UI library.
+64-bit Windows users can use MinGW-w64, Visual Studio, llvm-mingw, or tcc (both tcc64 and tcc32). Visual Studio takes a lot more space, but its header files are more up-to-date, so Visual Studio is preferred if you plan to use the UI library.
+
+32-bit Windows users can use tcc32. Other C compilers might also work to some extent but they're not officially supported yet.
 
 V uses recent Windows features like UTF-8 and color output support in console, IPv6 and native TLS support on sockets, etc. Windows 10 Fall Creators Update (**1709**) or later is the recommended Windows version for most complete compatibility. Windows 7, Windows 8(.1), and Windows 10 before Fall Creators Update are supported too but programs may lack some features and/or it may be hard to correctly link/redistribute recent C runtime library especially when using GNU C compiler.
 
@@ -53,10 +55,10 @@ If you do not want to use this compiler toolchain anymore, you can simply delete
 
 
 #### tcc
-tcc is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (less than 10MB), and compiles much more quickly than the other compilers listed here. However, it has several limitations:
+tcc is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (less than 10MB), and compiles much more quickly than the other compilers listed here. However, it has several limitations. For these reasons, a different and more advanced compiler is recommended.
  - It barely optimizes the resulting binaries, so resulting executables will be slower. That's partly why it compiles faster.
  - It is not as stable as GCC or Visual Studio. While it compiles V and its standard library perfectly, you may encounter issues if working with C interop, or with external modules that depend on C libraries.
 
-For these reasons, a different and more advanced compiler is recommended.
+Due to its small size, tcc is downloaded automatically if no existing C compiler is found. By default, tcc64 would be downloaded for 64-bit Windows users and tcc32 for 32-bit Windows users.
 
-Due to its small size, tcc is downloaded automatically if no existing C compiler is found. You can also install it manually by using `.\make.bat -tcc` or by running `git clone https://github.com/vlang/tccbin_win thirdparty/tcc` from V's root folder.
+For 64-bit Windows users, you can also install it manually by using `.\make.bat -tcc`(tcc64) / `.\make.bat -tcc32`(tcc32), or by running `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-amd64 thirdparty/tcc`(tcc64) / `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc`(tcc32) from V's root folder. For 32-bit Windows users, you can do `.\make.bat -tcc`, `.\make.bat -tcc32`, or `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc` - Any of them would install tcc32 for you.

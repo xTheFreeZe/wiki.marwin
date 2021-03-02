@@ -55,7 +55,7 @@ Visual Studio takes a lot more space (~10GB), but its header files are more up-t
 
 #### (3) LLVM-MinGW
 
-You can get a recent build of LLVM-MinGW from https://github.com/mstorsjo/llvm-mingw/releases. The main benefit with this compiler toolchain is that the released archives are self contained. There is NO installation necessary. Just ~516MB of disk space.
+You can get a recent build of LLVM-MinGW [here](https://github.com/mstorsjo/llvm-mingw/releases). The main benefit with this compiler toolchain is that the released archives are self contained. There is NO installation necessary. Just ~516MB of disk space.
 
 1) download a .zip file from the link above.
 
@@ -71,10 +71,8 @@ If you do not want to use this compiler toolchain anymore, you can simply delete
 
 TCC is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (~5MB), and compiles much more quickly than the other compilers listed here. However, it has several limitations. For these reasons, a different and more advanced compiler is recommended.
  - It barely optimizes the resulting binaries, so resulting executables will be slower. That's partly why it compiles faster.
- - It is not as stable as GCC or Visual Studio. While it compiles V and its standard library perfectly, you may encounter issues if working with C interop, or with external modules that depend on C libraries.
+ - It is not as stable as other supported compilers. While it compiles V and its standard library perfectly, you may encounter issues if working with C interop, or with external modules that depend on C libraries - Refer to [issues in this PR](https://github.com/vlang/v/pull/9030), for example.
 
-Due to its small size, TCC is downloaded automatically if no existing C compiler is found. By default, TCC64 would be downloaded for 64-bit Windows users and TCC32 for 32-bit Windows users.
+[Original TCC](https://repo.or.cz/tinycc.git) isn't fully compatible with V, and thus is cloned and patched in [this official tccbin repo](https://github.com/vlang/tccbin) to fully work with V. As a result, you should always use this patched TCC instead of original one.
 
-For 64-bit Windows users, you can also install it manually by using `.\make.bat -tcc`(TCC64) / `.\make.bat -tcc32`(TCC32), or by running `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-amd64 thirdparty/tcc`(TCC64) / `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc`(TCC32) from V's root folder.
-
-For 32-bit Windows users, you can also install it manually by using `.\make.bat -tcc`, `.\make.bat -tcc32`, or `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc` - Any of them would install TCC32 for you.
+Due to its small size, TCC64 or TCC32 is downloaded automatically if no existing C compiler is found on 64-bit or 32-bit Windows, respectively. **For 64-bit Windows**, you can also install TCC64 or TCC32 manually by using `.\make.bat -tcc`(TCC64) / `.\make.bat -tcc32`(TCC32), or by running `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-amd64 thirdparty/tcc`(TCC64) / `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc`(TCC32) from V's root folder. **For 32-bit Windows**, you can also install TCC32 manually by using `.\make.bat -tcc`, `.\make.bat -tcc32`, or `git clone https://github.com/vlang/tccbin/tree/thirdparty-windows-i386 thirdparty/tcc`.

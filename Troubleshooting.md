@@ -12,7 +12,7 @@ You can pass `-keepc -cg`, which will generate debugging symbols in your executa
 
 
 You can also set the VFLAGS environment variable to pass one or more flags to v, so that you do not have to type them manually every time.
-Windows (cmd): `set VFLAGS=-keepc -g -cc msvc -showcc`
+Windows (cmd): `set VFLAGS="-keepc -g -cc msvc -showcc"`
 Windows (PowerShell): `$env:VFLAGS="-keepc -g -cc msvc -showcc"`
 Unix (bash): export VFLAGS="-keepc -g -cc gcc -showcc"
 

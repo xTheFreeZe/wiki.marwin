@@ -39,8 +39,7 @@ ls
 <td valign="top">
 <pre>
 #!/usr/local/bin/v
-files := ls('.')?
-println(files)
+println(ls('.') ?)
 </pre>
 
 </td>

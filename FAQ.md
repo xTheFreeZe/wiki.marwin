@@ -69,7 +69,7 @@ How can it translate C++? It's impossible for one person to write a C++ parser.
 Clang parser is used for translating C/C++ to V.
 
 **What about editor support?**
-There are basic plugins for VS Code and Vim. Also check out the Vid editor, which is written in V. It has V support built in.
+There are basic plugins for VS Code and Vim. Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
 
 Plugins for Emacs, and other popular editors will be available soon.
 

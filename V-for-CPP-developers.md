@@ -51,7 +51,8 @@ numbers << 5
 <tr>
 <td>
 <pre>
-std::copy(numbers.begin(), numbers.end(), std::ostream_iterator<int>(std::cout, " "));
+std::copy(numbers.begin(), numbers.end(),
+    std::ostream_iterator<int>(std::cout, " "));
 std::cout << '\n';
 </pre>
 </td>

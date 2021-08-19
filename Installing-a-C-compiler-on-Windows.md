@@ -32,7 +32,7 @@ Due to its small size and very fast compile speeds, V downloads TCC automaticall
 | MinGW (GCC/clang)    | slow          | medium      | very many     |
 | Visual Studio (MSVC) | medium        | very high   | many          |
 
-#### (1) TCC
+### TCC
 
 TCC is a very lightweight C compiler. Its main advantages are that it takes up very little storage space (~5MB), and compiles much more quickly than the other compilers listed here. However, it has several limitations, and an additional compiler is recommended.
  - It barely optimizes the resulting binaries, so resulting executables will be slower and larger. That's partly why it compiles faster.
@@ -40,7 +40,7 @@ TCC is a very lightweight C compiler. Its main advantages are that it takes up v
 
     *Please note that the [original TCC](https://repo.or.cz/tinycc.git) isn't fully compatible with V, and V distributes [its own patched binary](https://github.com/vlang/tccbin/tree/thirdparty-windows-amd64).*
 
-#### (2) MinGW
+### MinGW
 
 You can get an up-to-date build of MinGW [here](https://winlibs.com/) (recommended), or [here](https://github.com/mstorsjo/llvm-mingw/releases). The main benefit with these compiler toolchains is that the release archives are self contained. There is NO installation necessary. Just ~1GB of disk space.
 
@@ -50,7 +50,7 @@ You can get an up-to-date build of MinGW [here](https://winlibs.com/) (recommend
 
 If you want to uninstall this compiler, you can simply delete the folder where you unpacked the zip (eg. `C:\mingw\`).
 
-#### (3) Visual Studio
+### Visual Studio
 
 Visual Studio takes up a lot more space (~10GB), but may be useful if you're planning on doing C interop with the Windows SDK / WinAPI.
 

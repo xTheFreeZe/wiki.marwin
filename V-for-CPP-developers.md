@@ -42,7 +42,7 @@ numbers.push_back(5);
 </td>
 <td valign="top">
 <pre>
-numbers << 5
+numbers <&lt; 5
 </pre>
 </td>
 </tr>

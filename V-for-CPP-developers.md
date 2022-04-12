@@ -5,7 +5,7 @@
 <pre class="highlight highlight-source-v">
 #include &lt;iostream>
 int main() {
-  std::cout &lt;&lt; "Hello World!" << "\n";
+  std::cout &lt;&lt; "Hello World!" &lt;&lt; "\n";
 }
 </pre>
 </td>
@@ -53,7 +53,7 @@ numbers &lt;&lt; 5
 <pre>
 std::copy(numbers.begin(), numbers.end(),
     std::ostream_iterator<int>(std::cout, " "));
-std::cout << '\n';
+std::cout &lt;&lt; '\n';
 </pre>
 </td>
 <td valign="top">

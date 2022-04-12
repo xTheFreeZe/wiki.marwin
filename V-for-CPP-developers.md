@@ -5,7 +5,7 @@
 <pre class="highlight highlight-source-v">
 #include &lt;iostream>
 int main() {
-  std::cout << "Hello World!" << "\n";
+  std::cout &lt;&lt; "Hello World!" << "\n";
 }
 </pre>
 </td>
@@ -42,7 +42,7 @@ numbers.push_back(5);
 </td>
 <td valign="top">
 <pre>
-numbers <&lt; 5
+numbers &lt;&lt; 5
 </pre>
 </td>
 </tr>

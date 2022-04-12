@@ -93,7 +93,7 @@ std::ifstream f("path");
 std::string text;
   text.assign(std::istreambuf_iterator<char>(f), {});
   if (!f)
-    std::cerr << "error reading from file\n";
+    std::cerr &lt;&lt; "error reading from file\n";
 </pre>
 </td>
 <td valign="top">

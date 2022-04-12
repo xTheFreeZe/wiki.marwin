@@ -43,7 +43,7 @@ numbers = append(numbers, 5)
 </td>
 <td valign="top">
 <pre>
-numbers << 5
+numbers &lt;&lt; 5
 </pre>
 </td>
 </tr>

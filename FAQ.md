@@ -26,7 +26,7 @@ In the future V will have its own optimizer.
 
 **Is there garbage collection?**
 
-No. V uses memory management techniques from Rust, Swift, and implements its own: vlang.io/docs#memory-management
+Yes, by default V uses a GC. You can disable it and manage memory manually with `-nogc` or use an experimental autofree via -autofree. vlang.io/docs#memory-management
 
 **Is there a package manager?**
 

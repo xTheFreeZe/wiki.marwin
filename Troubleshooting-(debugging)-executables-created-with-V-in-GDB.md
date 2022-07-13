@@ -27,7 +27,7 @@ You can inspect local variables with `info locals`.
 
 You can use `bt full` to get a backtrace, showing you all the functions on the call stack, and the local variables in each stack frame.
 
-To show the current value of a specific variable, use either `print var` or `display var.
+To show the current value of a specific variable, use either `print var` or `display var`.
 The difference, is that with `print var` you will see its value just once.
 With `display var`, the value will be displayed every time your program stops, which is handy if you want to trace it.
 

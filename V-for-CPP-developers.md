@@ -106,7 +106,128 @@ text := os.read_file(path) or {
 </td>
 </tr>
 
+<tr><td colspan="2" align="center">Monomorphic function</td></tr>
+<tr>
+<td>
+<pre>
+template &lt;typename T&gt;
+auto simple_fn(T param) {
+  return param;
+}
+auto value = simple_fn&lt;int&gt;(1);
+</pre>
+</td>
+<td valign="top">
+<pre>
+fn simple_fn&lt;T&gt;(param T) T {
+  return param
+}
 
+value := simple_fn(1)
+</pre>
+</td>
+</tr>
+
+
+<tr><td colspan="2" align="center">Monomorphic struct</td></tr>
+<tr>
+<td>
+<pre>
+template &lt;typename T&gt;
+struct generic_struct {
+  T value;
+  void generic_method();
+};
+
+template &lt;typename T&gt;
+generic_struct&lt;T&gt;::generic_method() {
+  return;
+}
+</pre>
+</td>
+<td valign="top">
+<pre>
+struct GenericStruct&lt;T&gt; {
+  value T
+}
+
+
+fn (g GenericStruct&lt;T&gt;) generic_method() {
+  return
+}
+</pre>
+</td>
+</tr>
+
+
+<tr><td colspan="2" align="center">Type reflection</td></tr>
+<tr>
+<td>
+<pre>
+#include &lt;iostream&gt;
+using Number = int;
+
+template &lt;typename T&gt;
+consteval bool is_number(T data) {
+  if constexpr (std::is_same&lt;T, Number&gt;()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+std::cout << is_number&lt;Number&gt;(0) << "\n";
+</pre>
+</td>
+<td valign="top">
+<pre>
+
+type Number = int
+
+fn is_number&lt;T&gt;(data T) bool {
+  &#36;if T is Number {
+    return true
+  } &#36;else {
+    return false
+  }
+}
+
+
+println(is_number(Number(0)))
+</pre>
+</td>
+</tr>
+
+<tr><td colspan="2" align="center">Standard map</td></tr>
+<tr>
+<td>
+<pre>
+#include &lt;iostream&gt;
+#include &lt;map&gt;
+std::map<std::string, int> my_map {
+  {"KEY_1", 0},
+  {"KEY_2", 10},
+};
+
+for (const auto &[key, value] : my_map) {
+  std::cout << key << ": " << value << ", ";
+}
+std::cout << "\n";
+</pre>
+</td>
+<td valign="top">
+<pre>
+
+
+my_map := map {
+  'KEY_1': 0
+  'KEY_2': 10
+}
+
+println(my_map)
+</pre>
+</td>
+</tr>
 
 
 </table>

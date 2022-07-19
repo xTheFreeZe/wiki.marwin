@@ -1,3 +1,5 @@
+[A minimal V project using VS Code, mingw gcc and gdb, containing .vscode/ with settings](https://github.com/lazalong/V-Hello) -  https://github.com/lazalong/V-Hello
+
 First, it is best to compile your V programs with `-keepc`, and use either `-cg` or `-g` so that the executables will have more debugging information/symbols in them.
 
 `-cg` is better, if you are trying to debug C interoperation, because you will avoid the mental context switches while debugging, seeing everything in one large generated C file.

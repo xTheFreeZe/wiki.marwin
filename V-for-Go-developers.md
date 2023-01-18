@@ -1,6 +1,6 @@
 <table>
 <thead>
-<tr><td>Go</td><td>V</td></tr>
+<tr><td><strong>Go</strong></td><td><strong>V</strong></td></tr>
 </thead>
 <tr><td colspan="2" align="center">Hello World</td></tr>
 <tr>
@@ -15,9 +15,7 @@ func main() {
 </td>
 <td valign="top">
 <pre>
-fn main() {
-  println('Hello World!')
-}
+println('Hello World!')
 </pre>
 </td>
 </tr>
@@ -116,7 +114,7 @@ text := string(b)
 <td valign="top">
 <pre>
 import os
-text := os.read_file(path)or{
+text := os.read_file(path) or {
   eprintln(err)
   return
 }

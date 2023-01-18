@@ -1,4 +1,7 @@
 <table>
+<thead>
+<tr><td>Go</td><td>V</td></tr>
+</thead>
 <tr><td colspan="2" align="center">Hello World</td></tr>
 <tr>
 <td>
@@ -18,8 +21,6 @@ fn main() {
 </pre>
 </td>
 </tr>
-
-
 <tr><td colspan="2" align="center">Slice initialization</td></tr>
 <tr>
 <td>
@@ -33,7 +34,6 @@ numbers := [1, 2, 3, 4]
 </pre>
 </td>
 </tr>
-
 <tr><td colspan="2" align="center">Add an element to a slice</td></tr>
 <tr>
 <td>
@@ -47,7 +47,6 @@ numbers &lt;&lt; 5
 </pre>
 </td>
 </tr>
-
 <tr><td colspan="2" align="center">Printing a slice</td></tr>
 <tr>
 <td>
@@ -61,8 +60,6 @@ println(numbers)
 </pre>
 </td>
 </tr>
-
-
 <tr><td colspan="2" align="center">Filtering a slice</td></tr>
 <tr>
 <td>
@@ -73,7 +70,6 @@ for _, num := range numbers {
     even = append(even, num)
   }
 }
-
 </pre>
 </td>
 <td valign="top">
@@ -82,19 +78,17 @@ even := numbers.filter(it % 2 == 0)
 </pre>
 </td>
 </tr>
-
 <tr><td colspan="2" align="center">Checking if a slice contains an element</td></tr>
 <tr>
 <td>
 <pre>
 contains := false
 for _, num := range numbers {
-        if num == x {
-            contains = true
-            break
-        }
-    }
-
+  if num == x {
+    contains = true
+    break
+  }
+}
 </pre>
 </td>
 <td valign="top">
@@ -103,22 +97,18 @@ contains := x in numbers
 </pre>
 </td>
 </tr>
-
-
-
-
 <tr><td colspan="2" align="center">Reading a file</td></tr>
 <tr>
 <td>
 <pre>
 import (
-    "io/ioutil"
-    "log"
+  "io/ioutil"
+  "log"
 )
 b, err := ioutil.ReadFile(path)
 if err != nil {
-        log.Println(err)
-        return
+  log.Println(err)
+  return
 }
 text := string(b)
 </pre>
@@ -133,34 +123,27 @@ text := os.read_file(path)or{
 </pre>
 </td>
 </tr>
-
-
 <tr><td colspan="2" align="center">Testing a function</td></tr>
 <tr>
 <td>
 <pre>
 package greeter_test
 import (
-    "testing"
+  "testing"
 )
 func TestHello(t *testing.T) {
-    if Hello() != "Hello" {
-        t.Fatalf("Hello() failed")
-    }
+  if Hello() != "Hello" {
+    t.Fatalf("Hello() failed")
+  }
 }
 </pre>
 </td>
 <td valign="top">
 <pre>
 fn test_hello() {
-    assert hello() == 'hello'
+  assert hello() == 'hello'
 }
 </pre>
 </td>
 </tr>
-
-
-
 </table>
-
-

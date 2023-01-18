@@ -1,6 +1,6 @@
 <table>
 <thead>
-<tr><td><strong>Go</strong></td><td><strong>V</strong></td></tr>
+<tr><td align="center"><strong>Go</strong></td><td align="center"><strong>V</strong></td></tr>
 </thead>
 <tr><td colspan="2" align="center">Hello World</td></tr>
 <tr>

@@ -40,7 +40,9 @@ Installing modules is as easy as `v install sqlite`
 
 # What about concurrency?
 
-It's going to be the same as in Go. To run `foo()` concurrently, just call it with `go`, like `go foo()`. Right now it launches the function in a new system thread. Soon coroutines and the scheduler will be implemented.
+To run `foo()` concurrently, just call it with `spawn`, like `spawn foo()`. Right now it launches the function in a new system thread.
+
+Soon coroutines and the scheduler will be implemented and writing a concurrency code in V is going to be the same as in Go - with a `go` keyword, like `go foo()`.
 
 # Does V run on bare metal?
 

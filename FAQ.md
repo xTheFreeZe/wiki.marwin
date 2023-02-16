@@ -26,27 +26,25 @@ In the future, V will have its own optimizer.
 
 # Is there garbage collection?
 
-Yes, by default V uses a GC. You can disable it and manage memory manually with `-nogc` or use an experimental autofree via -autofree. vlang.io/docs#memory-management
+Yes, by default V uses a GC. You can disable it and manage memory manually with `-nogc` or use an experimental autofree via `-autofree`. vlang.io/docs#memory-management
 
 # Is there a package manager?
 
 Yes! V is a very modular language and encourages creation of modules that are easy to reuse.
 
-vpm.vlang.io.
+The page for modules right now is [vpm.vlang.io](https://vpm.vlang.io/).
 
 Submitting your V module takes a couple of seconds.
 
-Installing modules is as easy as
-
-v install sqlite
+Installing modules is as easy as `v install sqlite`
 
 # What about concurrency?
 
-It's going to be the same as in Go. To run foo() concurrently, just call it with go foo(). Right now it launches the function in a new system thread. Soon coroutines and the scheduler will be implemented.
+It's going to be the same as in Go. To run `foo()` concurrently, just call it with `go`, like `go foo()`. Right now it launches the function in a new system thread. Soon coroutines and the scheduler will be implemented.
 
 # Does V run on bare metal?
 
-There is a -freestanding option that excludes libc and vlib, but it is a work in progress and is not the focus of development right now.
+There is a `-freestanding` option that excludes libc and vlib, but it is a work in progress and is not the focus of development right now.
 
 # Will I be able to use a custom allocator?
 

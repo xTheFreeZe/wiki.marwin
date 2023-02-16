@@ -73,11 +73,19 @@ Clang parser is used for translating C/C++ to V.
 
 # What about editor support?
 
-There are basic plugins for VS Code and Vim. Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
+There are plugins available for a wide range of IDEs and text editors.
 
-Plugins for Emacs and other popular editors will be available soon.
+| IDE/Editor     | Link to the plugin                                                         |
+|----------------|----------------------------------------------------------------------------|
+| VS Code        | https://marketplace.visualstudio.com/items?itemName=vlanguage.vscode-vlang |
+| JetBrains IDEs | https://intellij-v.github.io/                                              |
+| Vim            | https://github.com/ollykel/v-vim                                           |
+| Emacs          | https://github.com/damon-kwok/v-mode                                       |
+| Sublime Text   | https://github.com/elliotchance/vlang-sublime                              |
 
-V is a small and simple language, it doesn't need a powerful IDE.
+Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
+
+V is a small and simple language, it doesn't need a powerful IDE, but a good plugin can automate routine work and make your development process more fun :)
 
 # Why "V"?
 

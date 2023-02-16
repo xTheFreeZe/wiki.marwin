@@ -1,4 +1,4 @@
-# Why create V when there are already so many languages? Why not use Go, Rust, C++, Python etc?
+# Why create V when there are already so many languages? Why not use Go, Rust, C++, Python, etc?
 
 <a href="https://vlang.io/compare" target="_blank">Detailed comparison of V and other languages.</a>
 
@@ -16,13 +16,13 @@ A separate LLVM backend is developed by the community.
 
 # What about optimization?
 
-For now V emits C and uses GCC/Clang for optimized production builds. This way you get access to sophisticated optimization.
+For now, V emits C and uses GCC/Clang for optimized production builds. This way you get access to sophisticated optimization.
 
 Such builds are compiled ≈150 times slower than V development builds (but are still an order of magnitude faster than C++ production builds).
 
-This can be a problem for industries where optimization is required during development (for example AAA games). In this case, hot code reloading can be used.
+This can be a problem for industries where optimization is required during development (for example, AAA games). In this case, hot code reloading can be used.
 
-In the future V will have its own optimizer.
+In the future, V will have its own optimizer.
 
 # Is there garbage collection?
 
@@ -46,7 +46,7 @@ It's going to be the same as in Go. To run foo() concurrently, just call it with
 
 # Does V run on bare metal?
 
-There is a -freestanding option that excludes libc and vlib, but it is a work in progress, and is not the focus of development right now.
+There is a -freestanding option that excludes libc and vlib, but it is a work in progress and is not the focus of development right now.
 
 # Will I be able to use a custom allocator?
 
@@ -77,26 +77,26 @@ Clang parser is used for translating C/C++ to V.
 
 There are basic plugins for VS Code and Vim. Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
 
-Plugins for Emacs, and other popular editors will be available soon.
+Plugins for Emacs and other popular editors will be available soon.
 
 V is a small and simple language, it doesn't need a powerful IDE.
 
 # Why "V"?
 
-Initially the language had the same name as the product it was created for: Volt. The extension was ".v", I didn't want to mess up git history, so I decided to name it V :)
+Initially, the language had the same name as the product it was created for Volt. The extension was ".v", I didn't want to mess up git history, so I decided to name it V :)
 
-Note : the ".v" extension clashes with (at least) two other known file formats : "Verilog" and "Coq" languages.
-This is actually unfortunate, but so is life sometimes.. V language will not change its extension.
+Note: the ".v" extension clashes with (at least) two other known file formats: "Verilog" and "Coq" languages.
+This is actually unfortunate, but so is life sometimes... V language will not change its extension.
 
 It's a simple name that reflects the simplicity of the language, and it's easy to pronounce for everyone in the world.
 
 Please note that the name of the language is "V", not "Vlang" or "V-Lang" etc.
 
-The name is not very searchable (like Go), so use #vlang on Twitter, vlang on Google etc.
+The name is not very searchable (like Go), so use #vlang on Twitter, vlang on Google, etc.
 
 # Any plans to implement macros?
 
-No, sorry. Macros can be really useful, but they complicate the code significantly. Every company, team, developer can extend the language, and it's no longer possible to jump into a new codebase and immediately understand what's going on.
+No, sorry. Macros can be really useful, but they complicate the code significantly. Every company, team, and developer can extend the language, and it's no longer possible to jump into a new codebase and immediately understand what's going on.
 
 V will have sophisticated code generation.
 

@@ -62,6 +62,11 @@ Windows, macOS, Linux, FreeBSD, OpenBSD, NetBSD, DragonflyBSD, Solaris, Android 
 
 Android and iOS later this year.
 
+> **Note**
+>
+> This is a list of OS, that can be used to develop programs in V.
+> You can compile your V programs for Android using [Vab](https://github.com/vlang/vab) tool.
+
 # Who's behind V?
 
 Me and 250+ open source contributors.

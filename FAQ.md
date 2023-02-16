@@ -66,10 +66,9 @@ Android and iOS later this year.
 
 Me and 250+ open source contributors.
 
-# How can it translate C++?
+# How can it translate C/C++?
 
-It's impossible for one person to write a C++ parser.
-Clang parser is used for translating C/C++ to V.
+It's very hard for one person to write a C/C++ parser. There is a [C2V](https://github.com/vlang/c2v) tool [WIP], that can help you with translation or wrapper generation from C/C++ to V. Clang parser is used for translating C/C++ to V.
 
 # What about editor support?
 

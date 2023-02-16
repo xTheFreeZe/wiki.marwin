@@ -52,6 +52,10 @@ If you want to uninstall this compiler, you can simply delete the folder where y
 
 ### Visual Studio
 
-Visual Studio takes up a lot more space (~10GB), but may be useful if you're planning on doing C interop with the Windows SDK / WinAPI.
+Visual Studio takes up a lot more space (typically [20GB-50GB](https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements#hardware)), but may be useful if you're planning on doing C interop with the Windows SDK / WinAPI.
 
-[Download](https://visualstudio.microsoft.com/vs/) and install Visual Studio 2019. The community edition will suffice. In the installer select `Visual Studio core editor`, `Desktop development with C++`, and `Windows 10 SDK`.
+[Download](https://visualstudio.microsoft.com/vs/) and install the latest Visual Studio. The community edition will suffice. In the installer select `Visual Studio core editor`, `Desktop development with C++`, and `Windows 11 SDK`. Change your selection accordingly if you have Windows 10.
+
+It is also recommended to use either the Visual Studio Development Command Prompt (20XX) or Visual Studio Development PowerShell (20XX) which adds `cl.exe` and other relevant MSVC tools to path. See the [reference](https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell) for more information.
+
+When you build V from source, use `make.bat -msvc` to specify that you want to build V using Visual Studio, otherwise it defaults to TCC (which is good for fast compilation). For your own projects, use `v -cc msvc ...`, optionally with `-prod` to make optimised executables with MSVC.

@@ -1,12 +1,12 @@
-**Why create V when there are already so many languages? Why not use Go, Rust, C++, Python etc?**
+# Why create V when there are already so many languages? Why not use Go, Rust, C++, Python etc?
 
 <a href="https://vlang.io/compare" target="_blank">Detailed comparison of V and other languages.</a>
 
-**What language is V written in?**
+# What language is V written in?
 
 V. The compiler can compile itself. The original version was written in Go.
 
-**Does V use LLVM?**
+# Does V use LLVM?
 
 No. V uses C as its backend and will compile directly to machine code by the time of the 1.0 release.
 
@@ -14,7 +14,7 @@ No. V uses C as its backend and will compile directly to machine code by the tim
 
 A separate LLVM backend is developed by the community.
 
-**What about optimization?**
+# What about optimization?
 
 For now V emits C and uses GCC/Clang for optimized production builds. This way you get access to sophisticated optimization.
 
@@ -24,11 +24,11 @@ This can be a problem for industries where optimization is required during devel
 
 In the future V will have its own optimizer.
 
-**Is there garbage collection?**
+# Is there garbage collection?
 
 Yes, by default V uses a GC. You can disable it and manage memory manually with `-nogc` or use an experimental autofree via -autofree. vlang.io/docs#memory-management
 
-**Is there a package manager?**
+# Is there a package manager?
 
 Yes! V is a very modular language and encourages creation of modules that are easy to reuse.
 
@@ -40,42 +40,49 @@ Installing modules is as easy as
 
 v install sqlite
 
-**What about concurrency?**
+# What about concurrency?
+
 It's going to be the same as in Go. To run foo() concurrently, just call it with go foo(). Right now it launches the function in a new system thread. Soon coroutines and the scheduler will be implemented.
 
-**Does V run on bare metal?**
+# Does V run on bare metal?
+
 There is a -freestanding option that excludes libc and vlib, but it is a work in progress, and is not the focus of development right now.
 
-**Will I be able to use a custom allocator?**
+# Will I be able to use a custom allocator?
+
 Yes. This hasn't been implemented yet.
 
-**Is V going to change a lot?**
+# Is V going to change a lot?
 
 No, V will always stay a small and simple language.
 
 https://github.com/vlang/v/blob/master/README.md#stability-guarantee-and-future-changes
 
-**What operating systems are supported?**
+# What operating systems are supported?
 
 Windows, macOS, Linux, FreeBSD, OpenBSD, NetBSD, DragonflyBSD, Solaris, Android (Termux).
 
 Android and iOS later this year.
 
-**Who's behind V?**
+# Who's behind V?
 
 Me and 250+ open source contributors.
 
-How can it translate C++? It's impossible for one person to write a C++ parser.
+# How can it translate C++?
+
+It's impossible for one person to write a C++ parser.
 Clang parser is used for translating C/C++ to V.
 
-**What about editor support?**
+# What about editor support?
+
 There are basic plugins for VS Code and Vim. Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
 
 Plugins for Emacs, and other popular editors will be available soon.
 
 V is a small and simple language, it doesn't need a powerful IDE.
 
-**Why "V"?**
+# Why "V"?
+
 Initially the language had the same name as the product it was created for: Volt. The extension was ".v", I didn't want to mess up git history, so I decided to name it V :)
 
 Note : the ".v" extension clashes with (at least) two other known file formats : "Verilog" and "Coq" languages.
@@ -87,10 +94,12 @@ Please note that the name of the language is "V", not "Vlang" or "V-Lang" etc.
 
 The name is not very searchable (like Go), so use #vlang on Twitter, vlang on Google etc.
 
-**Any plans to implement macros?**
+# Any plans to implement macros?
+
 No, sorry. Macros can be really useful, but they complicate the code significantly. Every company, team, developer can extend the language, and it's no longer possible to jump into a new codebase and immediately understand what's going on.
 
 V will have sophisticated code generation.
 
-**Under which license is V published?**
+# Under which license is V published?
+
 MIT.

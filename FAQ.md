@@ -88,6 +88,8 @@ There are plugins available for a wide range of IDEs and text editors.
 | Vim            | https://github.com/ollykel/v-vim                                           |
 | Emacs          | https://github.com/damon-kwok/v-mode                                       |
 | Sublime Text   | https://github.com/elliotchance/vlang-sublime                              |
+| Atom           | https://github.com/Cutlery-Drawer/language-v                               |
+| Kakoune        | https://github.com/antono2/vlang.kak                                       |
 
 Also check out the <a href="https://github.com/vlang/ved">Ved</a> editor, which is written in V. It has V support built in.
 

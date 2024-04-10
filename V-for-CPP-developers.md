@@ -6,7 +6,7 @@
 ```cpp
 #include <iostream>
 int main() {
-	std::cout < "Hello World!" < "\n";
+	std::cout << "Hello World!" < "\n";
 }
 ```
 
@@ -65,7 +65,7 @@ numbers << 5
 ```cpp
 std::copy(numbers.begin(), numbers.end(),
 	std::ostream_iterator<int>(std::cout, " "));
-std::cout < '\n';
+std::cout << '\n';
 ```
 
 </td>
@@ -109,7 +109,7 @@ std::ifstream f("path");
 std::string text;
 	text.assign(std::istreambuf_iterator<char>(f), {});
 	if (!f)
-		std::cerr < "error reading from file\n";
+		std::cerr << "error reading from file\n";
 ```
 
 </td>

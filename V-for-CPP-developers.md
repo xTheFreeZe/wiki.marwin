@@ -6,7 +6,7 @@
 ```cpp
 #include <iostream>
 int main() {
-	std::cout << "Hello World!" < "\n";
+	std::cout << "Hello World!" << "\n";
 }
 ```
 
@@ -166,7 +166,7 @@ struct generic_struct {
 
 template <typename T>
 generic_struct<T>:generic_method() {
-return;
+	return;
 }
 
 ```

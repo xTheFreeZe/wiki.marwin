@@ -215,9 +215,9 @@ std::cout << is_number<Number>(0) << "\n";
 type Number = int
 
 fn is_number[T](data T) bool {
-	&#36;if T is Number {
+	$if T is Number {
 		return true
-	} &#36;else {
+	} $else {
 		return false
 	}
 }

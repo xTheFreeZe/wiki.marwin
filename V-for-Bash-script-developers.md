@@ -45,7 +45,7 @@ ls
 
 ```v
 #!/usr/local/bin/v
-println(ls('.') ?)
+println(ls('.')!)
 ```
 
 </td>

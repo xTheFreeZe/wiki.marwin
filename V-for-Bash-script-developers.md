@@ -24,7 +24,7 @@ echo "Hello world"
 <td valign="top">
 
 ```v
-#!/usr/local/bin/v
+#!/usr/bin/env -S v
 println('Hello World!')
 ```
 
@@ -44,7 +44,7 @@ ls
 <td valign="top">
 
 ```v
-#!/usr/local/bin/v
+#!/usr/bin/env -S v
 println(ls('.')!)
 ```
 

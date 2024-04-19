@@ -252,7 +252,7 @@ std::cout << "\n";
 <td valign="top">
 
 ```v
-my_map := map {
+my_map := {
 	'KEY_1': 0
 	'KEY_2': 10
 }

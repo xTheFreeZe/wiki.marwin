@@ -91,7 +91,7 @@ std::copy_if(numbers.begin(), numbers.end(),
 </td>
 <td valign="top">
 
-```cpp
+```v
 numbers.filter(it % 2 == 0)
 ```
 

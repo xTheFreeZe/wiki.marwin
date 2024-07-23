@@ -1,7 +1,8 @@
 This is the V *wiki* homepage.
 
-It lists various topics, that could not be categorized better in the official docs.md,
-or are still work in progress/updated a lot.
+It lists various topics, that could not be categorized better in the official docs.md.
+
+They can also be work in progress/updated a lot, so not yet ready to be added to the official docs.
 
 Please, visit the following pages (or search/click on the sidebar, for an updated list) depending on your interests:
 

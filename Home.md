@@ -1,1 +1,20 @@
-V
+This is the V *wiki* homepage.
+
+It lists various topics, that could not be categorized better in the official docs.md,
+or are still work in progress/updated a lot.
+
+Please, visit the following pages (or search/click on the sidebar, for an updated list) depending on your interests:
+
+* [Home](https://github.com/vlang/v/wiki)
+* [FAQ](https://github.com/vlang/v/wiki/FAQ)
+* [Helping to translate the V website](https://github.com/vlang/v/wiki/Helping-to-translate-the-V-website)
+* [Installing a C compiler on Linux and macOS](https://github.com/vlang/v/wiki/Installing-a-C-compiler-on-Linux-and-macOS)
+* [Installing a C compiler on Windows](https://github.com/vlang/v/wiki/Installing-a-C-compiler-on-Windows)
+* [On libc usage (early draft)](https://github.com/vlang/v/wiki/On-libc-usage-(early-draft))
+* [On the benefits of using C as a language backend](https://github.com/vlang/v/wiki/On-the-benefits-of-using-C-as-a-language-backend)
+* [The V language now compiles itself in 0.09 seconds](https://github.com/vlang/v/wiki/The-V-language-now-compiles-itself-in-0.09-seconds)
+* [Troubleshooting](https://github.com/vlang/v/wiki/Troubleshooting)
+* [Troubleshooting (debugging) executables created with V in GDB](https://github.com/vlang/v/wiki/Troubleshooting-(debugging)-executables-created-with-V-in-GDB)
+* [V for Bash script developers](https://github.com/vlang/v/wiki/V-for-Bash-script-developers)
+* [V for CPP developers](https://github.com/vlang/v/wiki/V-for-CPP-developers)
+* [V for Go developers](https://github.com/vlang/v/wiki/V-for-Go-developers)

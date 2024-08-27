@@ -26,7 +26,7 @@ In the future, V will have its own optimizer.
 
 # Is there garbage collection?
 
-Yes, by default V uses a GC. You can disable it and manage memory manually with `-nogc` or use an experimental autofree via `-autofree`. vlang.io/docs#memory-management
+Yes, by default V uses the Boehm GC (garbage collector) from https://github.com/ivmai/bdwgc . You can disable it, and manage memory manually by passing the compile option `-gc none` . You can also use the experimental autofree mechanism, by passing `-autofree`. See also vlang.io/docs#memory-management .
 
 # Is there a package manager?
 

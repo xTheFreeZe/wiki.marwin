@@ -4,7 +4,6 @@ If you are trying to build V on a Windows ARM device and encounter erros when ru
 
 To address the missing libraries, you will need to install the Visual Studio C++ build tools and the `cl` compiler. [You can download the Visual Studio Build Tools from here](https://visualstudio.microsoft.com/en/vs/community/)
 
->![NOTE]
 > Ensure that you install Visual Studio with the **Desktop development with C++** package. 
 > This will include the necessary libraries the Microsoft C++ (MSVC) compiler.
 
@@ -16,7 +15,6 @@ After installing the required tools, you can attempt to build V using the `MSVC`
 make.bat -msvc
 ```
 
->![IMPORTANT]
 > While the full build process may still fail due to incomplete support for ARM chips, 
 > this step will successfully generate a `v.exe` executable.
 

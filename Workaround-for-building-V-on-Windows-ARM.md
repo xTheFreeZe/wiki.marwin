@@ -5,7 +5,7 @@ If you are trying to build V on a Windows ARM device and encounter erros when ru
 To address the missing libraries, you will need to install the Visual Studio C++ build tools and the `cl` compiler. [You can download the Visual Studio Build Tools from here](https://visualstudio.microsoft.com/en/vs/community/)
 
 > Ensure that you install Visual Studio with the **Desktop development with C++** package. 
-> This will include the necessary libraries the Microsoft C++ (MSVC) compiler.
+> This will include the necessary libraries and the Microsoft C++ (MSVC) compiler.
 
 ## 2. Build V with MSVC
 
@@ -22,17 +22,17 @@ make.bat -msvc
 
 Once the `v.exe` executable is created, you can test the V compiler by running the following commands:
 
+Compiling a V program:
 ```bash
 v -cc msvc examples/hello_world.v
 ```
 
-Then, run the compiled executable:
-
+Running a V program:
 ```bash
 v -cc msvc run examples/hello_world.v
 ```
 
-If successfull, you should see the output `Hello, World!` in the console.
+If successful, you should see the output `Hello, World!` in the console.
 
 ## 4. Setting the Environment Variable
 
